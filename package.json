@@ -1,7 +1,7 @@
 {
   "name": "vue-link-popover",
   "description": "A reusable link popover component for VueJS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Yekeen Ajeigbe",
     "email": "aayekeen@gmail.com"
