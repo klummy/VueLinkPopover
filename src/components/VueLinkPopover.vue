@@ -3,7 +3,7 @@
     <a href="https://vuejs.org/v2/guide/components.html#Named-Slots" v-on:click.prevent v-on:mouseover="hover" v-on:mouseleave="hoverOut" class="popover__title" v-on:focus="hover" v-on:blur="hoverOut">
       <slot></slot>
     </a>
-    <transition name="fade">
+    <transition name="popover">
       <div class="popover__content" v-if="showPopup" v-on:mouseover="hoverInfo" v-on:mouseout="hoverOutInfo" v-on:click.prevent="hoverInfo">
         <slot name="content">
         </slot>
@@ -63,17 +63,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.fade-enter-active {
+<style lang="scss" scoped>
+.popover-enter-active {
   transition: all .3s ease-in-out;
 }
 
-.fade-leave-active {
+.popover-leave-active {
   transition: all .3s ease-in-out;
 }
 
-.fade-enter,
-.fade-leave-active {
+.popover-enter,
+.popover-leave-active {
   opacity: 0;
   transform: translateX(10px);
 }
@@ -90,10 +90,12 @@ export default {
     background: #fff;
     border: 1px solid #eee;
     box-shadow: 0 6px 6px rgba(16, 16, 16, 0.04), 0 6px 6px rgba(0, 0, 0, 0.05);
+    // right: -80px;
+    // margin-right: 30vw;
     max-width: 70vw;
     padding: 10px;
     position: absolute;
-    width: 200px;
+    width: 300px;
     z-index: 999;
 
   }
