@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/klummy/vue-link-popover.git"
+    "url": "git+https://github.com/klummy/VueLinkPopover.git"
   },
   "bugs": {
-    "url": "https://github.com/klummy/vue-link-popover/issues"
+    "url": "https://github.com/klummy/VueLinkPopover/issues"
   },
-  "homepage": "https://github.com/klummy/vue-link-popover#readme",
+  "homepage": "https://github.com/klummy/VueLinkPopover#readme",
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-eslint": "^7.1.1",
