@@ -1,0 +1,37 @@
+{
+  "name": "vue-link-popover",
+  "version": "2.0.0",
+  "description": "A component that shows 'popover' components when hovered/focused upon",
+  "main": "popover.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klummy/VueLinkPopover.git"
+  },
+  "keywords": [
+    "Vue",
+    "popover",
+    "vue",
+    "plugins"
+  ],
+  "author": "Yekeen Ajeigbe <aayekeen@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klummy/VueLinkPopover/issues"
+  },
+  "homepage": "https://github.com/klummy/VueLinkPopover#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
