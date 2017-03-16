@@ -3,21 +3,21 @@
     name: 'link-popover'
   }
 
-  let linkPopover = 'Yellow'
+  let Plugin = 'Yellow'
 
-  linkPopover.install = function (Vue, options) {
+  Plugin.install = function (Vue, options) {
     Vue.component(Component.name, Component)
   }
 
   /* eslint-disable */
   if (typeof exports === 'object') {
-    module.exports = linkPopover
+    module.exports = Plugin
   } else if (typeof define === 'function' && define.amd) {
     define([], function () {
-      return linkPopover
+      return Plugin
     })
   } else if (window.Vue) {
-    Vue.use(linkPopover)
+    Vue.use(Plugin)
   }
   /* eslint-enable */
 })()
