@@ -20,7 +20,7 @@
             Vue Link Popover
           </h1>
           <h2 class="subtitle">
-            Primary bold subtitle
+            Customisable, flexible, easy to use popover contents for Vue.js similar to that used by Facebook &amp; Twitter
           </h2>
         </div>
       </div>
@@ -28,9 +28,21 @@
 
     <div class="container">
 
-      <!-- Description
-      Installation
-      Usage -->
+      <section class="section">
+        <h2 class="title is-4">Demos</h2>
+
+        <div class="content">
+          <link-popover>
+            <h1>Default Popover - Hover to see</h1>
+            <div slot="content">
+              <h1>The Man James Bond</h1>
+              <p>Royal Navy Commander James Bond, CMG, RNVR, is a fictional character created by British journalist and novelist Ian Fleming in 1953. He is the protagonist of the James Bond series of novels, films, comics and video games. Fleming wrote twelve Bond novels and two short story collections, although the last two books—The Man with the Golden Gun and Octopussy and The Living Daylights—were published posthumously.</p>
+              <button>Read More</button>
+            </div>
+          </link-popover>
+        </div>
+      </section>
+
       <section class="section">
         <div class="heading">
           <h2 class="title is-4">Installation</h2>
@@ -38,19 +50,78 @@
         </div>
 
         <div class="content">
-          
+          <p>In a Vue.js project, install with <code>npm install --save vue-link-popover</code>.</p>
+
+          <p>
+            For browser based environments, download <a href="#">popover.js</a> or use it from a CDN:
+            <br />
+            <code>&lt;script src="https://unpkg.com/vue-link-popover@2.0.0/popover.js"&gt;&lt;script&gt;</code>
+          </p>
+
+          <p>
+            Optionally but recommended, include the default stylings by either copying &amp; tweaking the styles in <a href="#">themes/default.css</a> or by including it via CDN - <code>&lt;link rel="stylesheet" href="https://unpkg.com/vue-link-popover@2.0.0/themes/default.css" /&gt;</code>
+          </p>
         </div>
       </section>
 
-      <link-popover>
-      <h1>James Bond</h1>
-      <div slot="content">
-        <h1>The Man James Bond</h1>
-        <p>Royal Navy Commander James Bond, CMG, RNVR, is a fictional character created by British journalist and novelist Ian Fleming in 1953. He is the protagonist of the James Bond series of novels, films, comics and video games. Fleming wrote twelve Bond novels and two short story collections, although the last two books—The Man with the Golden Gun and Octopussy and The Living Daylights—were published posthumously.</p>
-        <button>Read More</button>
-      </div>
-    </link-popover>
+      <section class="section">
+        <h2 class="title is-4">Usage</h2>
+        <div class="content">
+          <p>
+            For browser environments, the plugin is automatically initialized with the default options so it be used immediately with the <code>&lt;link-popover&gt;</code> tag.
+          </p>
 
+          <p>
+            Import it as a component:
+            <pre>
+              <code>
+                import { LinkPopover } from 'vue-link-popover'<br />
+                // Register component
+                components: {
+                  LinkPopover
+                }
+              </code>
+            </pre>
+
+            To use it globally, import it from the package &amp; then register it:
+            <pre>
+              <code>
+                import Vue from 'vue' <br />
+                import LinkPopover from 'vue-link-popover'<br />
+                Vue.use(LinkPopover)
+              </code>
+            </pre>
+
+            Importing it globally allows the passing of customisation options such as transitionName &amp; custom themes. For example: <code>Vue.use(LinkPopover, { theme: 'snow-white', transitionName: 'my-awesome-transition'})</code>
+          </p>
+
+          <h3 class="title is-6">Available Options</h3>
+          <ul>
+            <li><strong>transitionName;</strong> This is the name of the transition to be used. <a href="https://vuejs.org/v2/guide/transitions.html">See the VueJS animation guide for how to use animations in Vue</a></li>
+            <li><strong>theme: </strong>This is the root class of the popup which you can use to easily customise the popup. For example, passing a theme variable of 'snow-white' can be used like this when styling:
+              <br />
+              <pre>
+                <code>
+                  .snow-white.popover {
+                    // Popup container
+
+                    &__text {
+                      // Visible text shown in browser
+                    }
+
+                    &__content {
+                      // Hidden popover content container                    }
+                  }
+
+                </code>
+              </pre>
+            </li>
+            <!-- <li><strong>theme: </strong></li> -->
+          </ul>
+
+
+        </div>
+      </section>
     </div>
   </div>
 
