@@ -1,0 +1,39 @@
+.popover-enter-active {
+  transition: all .3s ease-in-out;
+}
+
+.popover-leave-active {
+  transition: all .3s ease-in-out;
+}
+
+.popover-enter,
+.popover-leave-active {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.popover {
+  /*popover container*/
+  display: inline-block;
+  position: relative;
+}
+
+.popover__content {
+  /*Style of hidden popover content*/
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 6px rgba(16, 16, 16, 0.04), 0 6px 6px rgba(0, 0, 0, 0.05);
+  max-width: 70vw;
+  padding: 10px;
+  position: absolute;
+  width: 300px;
+  z-index: 999;
+}
+
+.popover__text {
+  /*Initially shown text*/
+}
+
+.popover__text:hover {
+
+}
