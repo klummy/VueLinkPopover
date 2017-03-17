@@ -3,6 +3,8 @@ Customisable, flexible, easy to use popover contents for Vue.js similar to that 
 
 *Inspired by [this](https://medium.com/@jilsonthomas/reusable-user-link-popover-component-using-vue-js-d37e525a8d27#.mxkgxtwj3)*
 
+[Demo](https://klummy.github.io/VueLinkPopover/example.html)
+
 ## Installation
 In a Vue.js project, install with ```npm install --save vue-link-popover```.
 

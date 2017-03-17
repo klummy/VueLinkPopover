@@ -36,17 +36,16 @@
   }
 
   const template = `
-    <div class="popover" :class="this.$popoverOpts.theme">
+    <div class="popover" :class="this.$popoverOpts ? this.$popoverOpts.theme : ''">
       <a href
         class="popover__text"
-        :class="this.$popoverOpts.theme"
         v-on:click.prevent
         v-on:mouseover="hoverIn"
         v-on:mouseleave="hoverOut"
       >
         <slot></slot>
       </a>
-      <transition :name="this.$popoverOpts.transitionName ? this.$popoverOpts.transitionName : 'popover'">
+      <transition :name="this.$popoverOpts ? this.$popoverOpts.transitionName : 'popover'">
         <div class="popover__content"
           v-if="showpopover"
           v-on:mouseover="hoverInfo"
@@ -67,7 +66,6 @@
         isInInfo: false
       }
     },
-    // props: ['theme', 'rootClass'],
     methods,
     template
   }
@@ -90,7 +88,7 @@
     })
   } else if (window.Vue) {
     // Options object should take 'theme', transitionName, params
-    Vue.use(Plugin, { theme: 'test' })
+    Vue.use(Plugin)
   }
   /* eslint-enable */
 })()
