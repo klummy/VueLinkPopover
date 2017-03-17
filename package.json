@@ -4,11 +4,14 @@
   "description": "A component that shows 'popover' components when hovered/focused upon",
   "main": "popover.js",
   "scripts": {
+    "start": "node_modules/browser-sync/bin/browser-sync.js start -s '.' reload -f '*.html,**/*.css,*.js'",
+    "build": "",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/klummy/VueLinkPopover.git"
+    "url": "git+https://github.com/klummy/VueLinkpopover.git"
   },
   "keywords": [
     "Vue",
@@ -17,21 +20,25 @@
     "plugins"
   ],
   "author": "Yekeen Ajeigbe <aayekeen@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/klummy/VueLinkPopover/issues"
+    "url": "https://github.com/klummy/VueLinkpopover/issues"
   },
-  "homepage": "https://github.com/klummy/VueLinkPopover#readme",
+  "homepage": "https://github.com/klummy/VueLinkpopover#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
+    "browser-sync": "^2.18.7",
     "eslint": "^3.15.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1"
+  },
+  "dependencies": {
+    "vue-config": "^1.0.0"
   }
 }
