@@ -1,7 +1,7 @@
 {
   "name": "vue-link-popover",
   "version": "2.0.0",
-  "description": "A component that shows 'popover' components when hovered/focused upon",
+  "description": "Customisable, flexible, easy to use popover contents for Vue.js similar to that used by Facebook &amp; Twitter",
   "main": "popover.js",
   "scripts": {
     "start": "node_modules/browser-sync/bin/browser-sync.js start -s '.' reload -f '*.html,**/*.css,*.js'",
