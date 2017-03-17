@@ -1,9 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src="popover.js"></script>
-  </head>
-  <body>
-    <h1>Yellow</h1>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Welcome to Vue</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+  <link rel="stylesheet" href="themes/default.css" />
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="popover.js"></script>
+</head>
+<body>
+  <div id="app">
+    <section class="hero is-medium is-light is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Vue Link Popover
+          </h1>
+          <h2 class="subtitle">
+            Primary bold subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- Description
+      Installation
+      Usage -->
+      <section class="section">
+        <div class="heading">
+          <h2 class="title is-4">Installation</h2>
+          <h3 class="subtitle is-6">Get up and running with Vue-Link-Popover</h3>
+        </div>
+
+        <div class="content">
+          
+        </div>
+      </section>
+
+      <link-popover>
+      <h1>James Bond</h1>
+      <div slot="content">
+        <h1>The Man James Bond</h1>
+        <p>Royal Navy Commander James Bond, CMG, RNVR, is a fictional character created by British journalist and novelist Ian Fleming in 1953. He is the protagonist of the James Bond series of novels, films, comics and video games. Fleming wrote twelve Bond novels and two short story collections, although the last two books—The Man with the Golden Gun and Octopussy and The Living Daylights—were published posthumously.</p>
+        <button>Read More</button>
+      </div>
+    </link-popover>
+
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+      },
+      methods: {
+        humanizeURL: function (url) {
+          return url
+            .replace(/^https?:\/\//, '')
+            .replace(/\/$/, '')
+        }
+      }
+    })
+  </script>
+</body>
 </html>
