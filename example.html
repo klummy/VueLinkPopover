@@ -33,7 +33,14 @@
 
         <div class="content">
           <link-popover>
-            <h1>Default Popover - Hover to see</h1>
+            <button class="button primary">Default Popup</button>
+            <div slot="content">
+              By default, the popup is shown when the trigger text/content is hovered upon
+            </div>
+          </link-popover>
+
+          <link-popover click="true">
+            <button class="button is-black">Click Me To Open Popup</button>
             <div slot="content">
               <h1>The Man James Bond</h1>
               <p>Royal Navy Commander James Bond, CMG, RNVR, is a fictional character created by British journalist and novelist Ian Fleming in 1953. He is the protagonist of the James Bond series of novels, films, comics and video games. Fleming wrote twelve Bond novels and two short story collections, although the last two books—The Man with the Golden Gun and Octopussy and The Living Daylights—were published posthumously.</p>
@@ -68,7 +75,7 @@
         <h2 class="title is-4">Usage</h2>
         <div class="content">
           <p>
-            For browser environments, the plugin is automatically initialized with the default options so it be used immediately with the <code>&lt;link-popover&gt;</code> tag.
+            For browser environments, the plugin is automatically initialized with the default options so it can be used immediately with the <code>&lt;link-popover&gt;</code> tag.
           </p>
 
           <p>
@@ -97,6 +104,7 @@
 
           <h3 class="title is-6">Available Options</h3>
           <ul>
+            <li><strong>click</strong> By default, the popover shows when hovered upon, however, you can change this behaviour to open the popup only when the click parameter is passed. Unlike the other options, this is used right on the popup container. For example, <code><link-popover click="true">Opens the popover click. <div slot="content">Opened on click</div></link-popover></code></a></li>
             <li><strong>transitionName;</strong> This is the name of the transition to be used. <a href="https://vuejs.org/v2/guide/transitions.html">See the VueJS animation guide for how to use animations in Vue</a></li>
             <li><strong>theme: </strong>This is the root class of the popup which you can use to easily customise the popup. For example, passing a theme variable of 'snow-white' can be used like this when styling:
               <br />

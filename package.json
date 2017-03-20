@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node_modules/browser-sync/bin/browser-sync.js start -s '.' reload -f '*.html,**/*.css,*.js'",
     "build": "",
-    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
