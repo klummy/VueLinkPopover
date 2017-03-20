@@ -1,6 +1,6 @@
 {
   "name": "vue-link-popover",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Customisable, flexible, easy to use popover contents for Vue.js similar to that used by Facebook &amp; Twitter",
   "main": "popover.js",
   "scripts": {

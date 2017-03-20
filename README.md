@@ -39,11 +39,20 @@ To use it globally, import it from the package & then register it:
 ```
 
 ### Available Options
-- **transitionName**; This is the name of the transition to be used. See the VueJS animation guide for how to use animations in Vue
-- **theme**: This is the root class of the popup which you can use to easily customise the popup. For example, passing a theme variable of 'snow-white' can be used like this when styling:
+- **click**: By default, the popover shows when hovered upon, however, you can change this behaviour to open the popup only when the click parameter is passed. Unlike the other options, this is used right on the popup container. For example:
+```html
+  <link-popover click="true">
+    Opens the popover click.
+    <div slot="content">Opened on click</div>
+  </link-popover>
+```
+
+- **transitionName**: This is the name of the transition to be used. See the VueJS animation guide for how to use animations in Vue. You can use this by including it in the options when initializing the plugin. ```Vue.use(LinkPopover, { transitionName: 'myAwesomeTransitionName' })```
+
+- **theme**: This is the root class of the popup which you can use to easily customise the popup. You can use this by including it in the options when initializing the plugin - ```Vue.use(LinkPopover, { theme: 'my-awesome-theme' })```. The theme can then be used like this when styling:
 
 ```scss
-  .snow-white.popover {
+  .my-awesome-theme.popover {
     // Popup container
 
     &__text {
