@@ -82,7 +82,7 @@
             Import it as a component:
             <pre>
               <code>
-                import { LinkPopover } from 'vue-link-popover'<br />
+                import LinkPopover from 'vue-link-popover'<br />
                 // Register component
                 components: {
                   LinkPopover
@@ -94,8 +94,9 @@
             <pre>
               <code>
                 import Vue from 'vue' <br />
+                import 'vue-link-popover/themes/default.css' <br />
                 import LinkPopover from 'vue-link-popover'<br />
-                Vue.use(LinkPopover)
+                Vue.component('link-popover', LinkPopover)
               </code>
             </pre>
 
