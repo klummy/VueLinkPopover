@@ -20,7 +20,9 @@ For browser environments, the plugin is automatically initialized with the defau
 
 Import it as a component:
 ```javascript
-  import { LinkPopover } from 'vue-link-popover'
+  // Import style
+  import 'vue-link-popover/themes/default.css'
+  import LinkPopover from 'vue-link-popover'
 
   // Register component
   components: {
@@ -33,9 +35,10 @@ To use it globally, import it from the package & then register it:
 ```javascript
   import Vue from 'vue'
 
+  import 'vue-link-popover/themes/default.css'
   import LinkPopover from 'vue-link-popover'
 
-  Vue.use(LinkPopover)
+  Vue.component('link-popover', LinkPopover)
 ```
 
 ### Available Options
