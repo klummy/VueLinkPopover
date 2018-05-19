@@ -1,4 +1,6 @@
 # VueLinkPopover
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/klummy/VueLinkPopover.svg)](https://greenkeeper.io/)
 Customisable, flexible, easy to use popover contents for Vue.js similar to that used by Facebook & Twitter
 
 *Inspired by [this](https://medium.com/@jilsonthomas/reusable-user-link-popover-component-using-vue-js-d37e525a8d27#.mxkgxtwj3)*
